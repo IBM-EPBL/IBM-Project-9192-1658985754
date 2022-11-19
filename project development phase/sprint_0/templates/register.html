@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='register.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <h3 style="text-decoration:underline;">Enter your details</h3>
+            <form action="http:localhost:5000/register/validate_reg" method="post">
+                <table>
+                    <tr><td>Enter name: </td><td><input type="text" name="name"></td></tr>
+                    <tr><td>Enter email: </td><td><input type="email" name="email"></td></tr>
+                    <tr><td>Enter password: </td><td><input type="password" name="password1"></td></tr>
+                    <tr><td>Confirm password: </td><td><input type="password" name="password2"></td></tr>
+                    <tr><td><input type="submit" value="Register"></td><td>Or <a href="http:localhost:5000/">go back</a></td></tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

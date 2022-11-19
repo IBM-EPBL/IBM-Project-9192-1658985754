@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(80, 64, 64);
+    background-color: rgb(236,233,233);
+}
+.container{
+    position: fixed;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    top: 150px;
+    left: 35%;
+    width: auto;
+    background-color: rgb(78, 205, 196);
+}
+.container input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 95%;
+    background-color: rgb(40, 188, 183);
+    color: rgb(80, 64, 64);
+}
+.container input[type="submit"]:hover{
+    color: grey;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.container a{
+    text-decoration: underline;
+    color: rgb(80, 64, 64);
+}

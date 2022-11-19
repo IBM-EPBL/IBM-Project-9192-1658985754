@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iventory management</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <table>
+                <tr><td style="width: 70%"">
+                    <!--Image-->
+                    <img id="home_page_img" src="{{url_for('static',filename='home_page.png')}}" alt="image">
+                </td><td style="width: 30%">
+                    <!--Login form-->
+                    <form id="home_page_login" action="http://localhost:5000/validate_login" method="post">
+                        <p>A common portal for both retailers and customers to manage inventory</p>
+                        <h3 style="text-decoration:underline">Login</h3>
+                        <table style="width: 100%">
+                            <tr><td>Enter username: </td><td><input type="text" name="username"></td></tr>
+                            <tr><td>Enter password: </td><td><input type="password" name="password"></td></tr>
+                            <tr><td><input type="submit" value="Login"></td><td>Or <a href="http://localhost:5000/register">register here!</a></td></tr>
+                        </table>
+                    </form>
+                </td></tr>
+            </table>
+        </div>
+    </body>
+</html>

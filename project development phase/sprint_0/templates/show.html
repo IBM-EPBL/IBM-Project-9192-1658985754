@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome {{session['username']}}</title>
+        <link rel="stylesheet" href="{{url_for('static',filename = 'index.css')}}">
+    </head>
+    <body>
+        {% if session['type'] == 'admin' %}
+            <div class="nav">
+                <ul>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/index/show">Show inventory</a></li>
+                    <li><a href="/index/modify">Modify inventory</a></li>
+                    <li style="float:right;"><a href="/logout">Logout</a></li>
+                    <li style="float:right;"><a href="">Admin</a></li>
+                </ul>
+            </div>
+            {% for i in range(5): %}
+                <div class="container">
+                    <p>Product {{i}}</p>
+                </div>
+            {% endfor %}
+        {% elif session['type'] == 'customer' %}
+            <div class="nav">
+
+            </div>
+            <div class="container">
+
+            </div>
+        {% endif %}
+    </body>
+</html>
